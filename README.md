@@ -36,13 +36,13 @@ npm install --save version-sort
 ```
 
 
-[gemnasium-url]: https://gemnasium.com/quentinrossetti/version-sort
-[gemnasium-image]: http://img.shields.io/gemnasium/quentinrossetti/version-sort.svg
-[travis-url]: https://travis-ci.org/quentinrossetti/version-sort
-[travis-image]: http://img.shields.io/travis/quentinrossetti/version-sort.svg
-[codeclimate-url]: https://codeclimate.com/github/quentinrossetti/version-sort
-[codeclimate-image]: http://img.shields.io/codeclimate/github/quentinrossetti/version-sort.svg
-[coveralls-url]: https://coveralls.io/r/quentinrossetti/version-sort
-[coveralls-image]: http://img.shields.io/coveralls/quentinrossetti/version-sort.svg
-[npm-url]: https://www.npmjs.org/package/version-sort
-[npm-image]: http://img.shields.io/npm/v/version-sort.svg
+[gemnasium-url]: //gemnasium.com/quentinrossetti/version-sort
+[gemnasium-image]: //img.shields.io/gemnasium/quentinrossetti/version-sort.svg
+[travis-url]: //travis-ci.org/quentinrossetti/version-sort
+[travis-image]: //img.shields.io/travis/quentinrossetti/version-sort.svg
+[codeclimate-url]: //codeclimate.com/github/quentinrossetti/version-sort
+[codeclimate-image]: //img.shields.io/codeclimate/github/quentinrossetti/version-sort.svg
+[coveralls-url]: //coveralls.io/r/quentinrossetti/version-sort
+[coveralls-image]: //img.shields.io/coveralls/quentinrossetti/version-sort.svg
+[npm-url]: //www.npmjs.org/package/version-sort
+[npm-image]: //img.shields.io/npm/v/version-sort.svg
