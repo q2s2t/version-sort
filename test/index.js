@@ -21,7 +21,7 @@ describe('version-sorter module', function () {
       '2.4.20rc2'
     ];
     var r = sorter(_.shuffle(data));
-    expect(r).to.eql(data.reverse());
+    expect(r).to.eql(data);
   });
 
   it('should fail to sort when version format is wrong', function () {

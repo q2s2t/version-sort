@@ -121,6 +121,6 @@ module.exports = function (versions) {
     r.push(_versionSort.index);
   });
 
-  return r;
+  return r.reverse();
 
 };
