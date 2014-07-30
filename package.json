@@ -1,0 +1,34 @@
+{
+  "name": "version-sort",
+  "version": "0.0.1",
+  "description": "Sort an array of versions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha --dir test/coverage",
+    "coveralls": "npm install coveralls && cat ./test/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quentinrossetti/version-sort.git"
+  },
+  "keywords": [
+    "node",
+    "version",
+    "sort"
+  ],
+  "author": "Quentin Rossetti <quentinrossetti@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quentinrossetti/version-sort/issues"
+  },
+  "homepage": "https://github.com/quentinrossetti/version-sort",
+  "dependencies": {
+    "underscore": "^1.6.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "istanbul": "^0.3.0",
+    "mocha": "^1.21.3"
+  }
+}
