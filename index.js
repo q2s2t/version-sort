@@ -2,7 +2,7 @@
 var _ = require('underscore');
 
 /**
- * Sort a list of versions an sort it.
+ * Read a list of versions an sort it.
  * @module version-sort
  * @function index
  * @param  {array} versions An array of versions to sort.
