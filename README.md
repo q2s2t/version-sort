@@ -1,6 +1,3 @@
-version-sort
-============
-
 [![version-sort logo](https://raw.githubusercontent.com/quentinrossetti/version-sort/master/logo.png)](https://github.com/quentinrossetti/version-sort)
 
 [![Dependencies Status][gemnasium-image]][gemnasium-url] [![Build Status][travis-image]][travis-url] [![Code quality][codeclimate-image]][codeclimate-url] [![Code coverage][coveralls-image]][coveralls-url] [![Release][npm-image]][npm-url]
