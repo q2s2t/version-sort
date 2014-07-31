@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha --reporter spec",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha --dir .tmp/coverage",
-    "coveralls": "npm install coveralls && cat ./.tmp/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "coveralls": "npm install coveralls && cat ./.tmp/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "codeclimate": "npm install codeclimate-test-reporter && CODECLIMATE_REPO_TOKEN=1c6990a6ff3ba2c978c5f98a8270c293ae38077ba4963a963af7c0ed3899cd8c ./node_modules/coveralls/bin/codeclimate < .tmp/coverage/lcov.info"
   },
   "repository": {
     "type": "git",
