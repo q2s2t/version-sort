@@ -37,13 +37,15 @@ var results = sort(data, options);
 ```
 
  * `ignore_stages`: *(default: `false`)* Only return stables versions and ignore
-   staged versions. `[ '1.1', '1.1alpha' ]` will return `[ '1.1' ]`.
+   staged versions.
+   Example:
    ```js
    var results = sort([ '1.1', '1.1alpha' ], { ignore_stages: true });
    // [ '1.1' ]
    ```
 
  * `nested`: *(default: `false`)* Use this option to sort object by a field.
+   Example:
    ```js
    var softwares = [ { version: '1.1' }, { version: '1.1alpha' } ];
    var results = sort(softwares, { nested: 'version' });
