@@ -7,7 +7,7 @@ version-sort
 
 ## Usage
 
-This module sort an array of versions. Here some exemples of valid versions:
+This module sort an array of versions. Here some examples of valid versions:
 
 ```
 1.1.0
