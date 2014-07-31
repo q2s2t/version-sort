@@ -20,8 +20,7 @@ describe('version-sorter module', function () {
       '2.4.20beta',
       '2.4.20rc1',
       '2.4.20rc2',
-      '2.4.20'
-    ];
+      '2.4.20' ];
     var r = sorter(_.shuffle(data));
     expect(r).to.eql(data);
   });
@@ -40,6 +39,16 @@ describe('version-sorter module', function () {
     var data = [ '1.1alpha', '1.1', '1.2beta', '1.2', '1.3alpha' ];
     var r = sorter(data, { ignore_stages: true });
     expect(r).to.eql([ '1.1', '1.2' ]);
+  });
+
+  it('should sort with objects with `nested`', function () {
+    var data = [
+      { version: '1.1beta' },
+      { version: '1.1rc3' },
+      { version: '1.1' },
+      { version: '1.1.150' } ];
+    var r = sorter(_.shuffle(data), { nested: 'version' });
+    expect(r).to.eql(data);
   });
 
 });

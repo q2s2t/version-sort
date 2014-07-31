@@ -6,4 +6,4 @@ Changelog
  * API change: Add a optional `options` parameter to the function.
  * New feature: Use `{ ignore_stages: true }` to only return stables versions.
 
-> Date in *ISO 8601* format (year-month-day)
+> Dates are in *ISO 8601* format (year-month-day)
