@@ -79,11 +79,21 @@ module.exports = function (versions) {
     return a.localeCompare(b);
   });
 
+  // Transform the store on unique stage names in order to place stable versions
+  // at the end.
+  lenStore.stageName[0] = null;
+  lenStore.stageName.push('');
+
+
+  // Number of digit in the biggest sequence
   len.number      = _.max(lenStore.number).toString().length;
+  // Biggest number of sequence
   len.sequence    = _.max(lenStore.sequence);
+
   len.stageName   = lenStore.stageName.length.toString().length;
   len.stageNumber = _.max(lenStore.stageNumber).toString().length;
 
+  
   var versionsSort = [];
 
   v.forEach(function (_version, _i) {
@@ -109,7 +119,7 @@ module.exports = function (versions) {
     // parseInt
     calc = parseInt(calc);
     var index = versions[_i];
-    versionsSort.push({index: index, calc: calc});
+    versionsSort.push({ index: index, calc: calc });
   });
 
   versionsSort.sort(function (a, b) {
