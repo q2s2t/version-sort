@@ -1,6 +1,6 @@
 {
   "name": "version-sort",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Sort an array of versions.",
   "main": "index.js",
   "scripts": {

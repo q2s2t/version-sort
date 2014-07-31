@@ -6,10 +6,18 @@ var _ = require('underscore');
  * @module version-sort
  * @function index
  * @param  {array} versions An array of versions to sort.
+ * @param {object} opts An object of options.
  * @return {array} The same version array but sorted.*
  * @license http://git.io/bHDfwQ ISC License
  */
-module.exports = function (versions) {
+module.exports = function (versions, opts) {
+
+  var options = {
+    ignore_stages: false
+  };
+  if (opts) {
+    options.ignore_stages = opts.ignore_stages || options.ignore_stages
+  }
 
   var regex = /^([\d+\.]+)(([a-z]*)(\d*))$/;
 
@@ -97,6 +105,9 @@ module.exports = function (versions) {
   var versionsSort = [];
 
   v.forEach(function (_version, _i) {
+    if (options.ignore_stages && _version.stageName) {
+      return;
+    }
     var calc = '';
     // number
     var split       = _version.number.split('.');

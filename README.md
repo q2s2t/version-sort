@@ -1,4 +1,5 @@
-[![version-sort logo](https://raw.githubusercontent.com/quentinrossetti/version-sort/master/logo.png)](https://github.com/quentinrossetti/version-sort)
+version-sort
+============
 
 [![Dependencies Status][gemnasium-image]][gemnasium-url] [![Build Status][travis-image]][travis-url] [![Code quality][codeclimate-image]][codeclimate-url] [![Code coverage][coveralls-image]][coveralls-url] [![Release][npm-image]][npm-url]
 
@@ -18,7 +19,7 @@ This module sort an array of versions. Here some exemples of valid versions:
 2.4.20alpha
 2.4.20beta
 2.4.20rc1
-2.4.20rc
+2.4.20rc2
 ```
 
 To use it just call the module as a function.
@@ -26,8 +27,17 @@ To use it just call the module as a function.
 ```js
 var sort = require('version-sort');
 data = [ '2.4.20', '2.4.20rc1', '1.1', '2.4.20beta1' ];
-sort(data); // '1.1', '2.4.20', '2.4.20beta1', '2.4.20rc1'
+sort(data); // '1.1', '2.4.20beta1', '2.4.20rc1', '2.4.20'
 ```
+
+### Options
+
+```js
+var results = sort(data, options);
+```
+
+ * `ignore_stages`: *(default: `false`)* Only return stables versions and ignore
+   staged versions. `[ '1.1', '1.1alpha' ]` will return `[ '1.1' ]`.
 
 ## Installation
 

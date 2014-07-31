@@ -8,7 +8,7 @@ var expect = chai.expect;
 
 describe('version-sorter module', function () {
 
-  it('should sort softwares by version properly', function () {
+  it('should sort versions properly', function () {
     var data = [
       '1.1.0',
       '1.1.4.5687',
@@ -34,6 +34,12 @@ describe('version-sorter module', function () {
       var type = Object.prototype.toString.call(err);
       expect(type).to.contain('Error');
     }
+  });
+
+  it('should return only stables version with `ignore_stages`', function () {
+    var data = [ '1.1alpha', '1.1', '1.2beta', '1.2', '1.3alpha' ];
+    var r = sorter(data, { ignore_stages: true });
+    expect(r).to.eql([ '1.1', '1.2' ]);
   });
 
 });
