@@ -1,6 +1,6 @@
 /* global describe, it */
 'use strict';
-var _      = require('underscore');
+var _      = require('lodash');
 var chai   = require('chai');
 var sorter = require('..');
 
