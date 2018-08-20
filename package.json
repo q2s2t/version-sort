@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/quentinrossetti/version-sort",
   "dependencies": {
-    "underscore": "^1.6.0"
+    "lodash": "^4.0.0"
   },
   "devDependencies": {
     "chai": "^1.9.1",
