@@ -15,13 +15,15 @@ module.exports = function (versions, opts) {
   // Options
   var options = {
     ignore_stages: false,
-    nested       : false
+    nested       : false,
+    allow_null   : false
   };
+
   if (opts) {
     options.ignore_stages = opts.ignore_stages || options.ignore_stages;
     options.nested = opts.nested || options.nested;
+    options.allow_null = opts.allow_null || options.allow_null;
   }
-
 
   // Nested objects
   if (options.nested) {
@@ -57,7 +59,7 @@ module.exports = function (versions, opts) {
 
   // Fill stores up!
   versions.forEach(function (_version) {
-    var compose = composeVersion(_version, regex);
+    var compose = composeVersion(_version, regex, options.allow_null);
     v.push(compose);
     store.number.push(compose.number);
     store.stage.push(compose.stage);
@@ -106,7 +108,7 @@ module.exports = function (versions, opts) {
   //TODO: commenting
   len.stageNumber = _.max(lenStore.stageNumber).toString().length;
 
-  
+
   var versionsSort = [];
 
   v.forEach(function (_version, _i) {
@@ -167,9 +169,16 @@ module.exports = function (versions, opts) {
 /**
  * Transform a string into an exploitable version object.
  * @param str The original string
+ * @param regex The regex applied
+ * @param allowNull Whether null values are accepted
  * @returns {{number: *, stage: (*|null), stageName: (*|null), stageNumber: (*|null)}}
  */
-function composeVersion(str, regex) {
+function composeVersion(str, regex, allowNull) {
+  if (allowNull){
+    str = str || 0;
+  } else if (str === null) {
+    throw new Error('To allow passing null values set the `allow_null` option as true.');
+  }
   var r = regex.exec(str);
   return {
     number     : r[ 1 ],

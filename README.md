@@ -51,6 +51,13 @@ var results = sort(data, options);
    var results = sort(softwares, { nested: 'version' });
    // [ { version: '1.1alpha' }, { version: '1.1'} ]
    ```
+   
+ * `allow_null`: *(default: `false`)* Use this option to allow `null` values.
+    Example:
+    ```js
+    var results = sort([ '1.1', null ], { allow_null: true });
+       [ null, '1.1' ]
+    ```
 
 ## Installation
 

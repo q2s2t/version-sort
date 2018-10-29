@@ -51,4 +51,19 @@ describe('version-sorter module', function () {
     expect(r).to.eql(data);
   });
 
+  it('should throw error for null values', function () {
+    var data = [
+      null,
+      '1.1' ];
+    chai.assert.throws(function () { sorter(data);}, Error, 'To allow passing null values set the `allow_null` option as true.');
+  });
+
+  it('should allow for null values with `allow_null`', function () {
+    var data = [
+      null,
+      '1.1' ];
+    var r = sorter(_.shuffle(data), {allow_null: true});
+    expect(r).to.eql(data);
+  });
+
 });
