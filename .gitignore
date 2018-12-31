@@ -9,6 +9,7 @@ pids
 
 # Coverage directory used by tools like istanbul
 test/coverage
+.nyc_output
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
@@ -20,3 +21,6 @@ node_modules
 
 # Temporary files
 .tmp
+
+# Editor
+.vscode
