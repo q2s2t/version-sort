@@ -4,7 +4,7 @@ Code quality:
   ☐ Maintainability score *A*, badge with *Code Climate*
   ☐ 100% test coverage, badge with *Code Climate*
   ☐ Automated testing using *CircleCI*
-  ☐ Conventional commits
-  ☐ StandardJS coding style
+  ✔ Conventional commits @done(18-12-31 13:59)
+  ✔ StandardJS coding style @done(18-12-31 13:59)
 Performances:
   ☐ Clean and optimize calls to *lodash*, maybe remove this dependency
