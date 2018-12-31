@@ -1,0 +1,10 @@
+Code quality:
+  ✔ Update dependencies @done(18-12-31 13:44)
+  ☐ Check for vulnerabilities, badge with *Snyk*
+  ☐ 100% test coverage, badge with *Code Climate*
+  ☐ Maintainability score *A*, badge with *Code Climate*
+  ☐ Automated testing using *CircleCI*
+  ☐ Conventional commits
+  ☐ StandardJS coding style
+Performances:
+  ☐ Clean and optimize calls to *lodash*, maybe remove this dependency
