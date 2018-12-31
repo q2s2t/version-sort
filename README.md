@@ -2,6 +2,7 @@ version-sort
 ============
 
 [![Dependencies Status][gemnasium-image]][gemnasium-url] [![Build Status][travis-image]][travis-url] [![Code quality][codeclimate-image]][codeclimate-url] [![Code coverage][coveralls-image]][coveralls-url] [![Release][npm-image]][npm-url]
+[![Known Vulnerabilities][vulnerabilities-image]][vulnerabilities-url]
 
 > Sort an array of versions.
 
@@ -69,3 +70,5 @@ npm install --save version-sort
 [coveralls-image]: http://img.shields.io/coveralls/quentinrossetti/version-sort.svg
 [npm-url]: https://www.npmjs.org/package/version-sort
 [npm-image]: http://img.shields.io/npm/v/version-sort.svg
+[vulnerabilities-image]: https://snyk.io/test/github/quentinrossetti/version-sort/badge.svg?targetFile=package.json
+[vulnerabilities-url]: https://snyk.io/test/github/quentinrossetti/version-sort?targetFile=package.json
