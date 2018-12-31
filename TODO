@@ -1,9 +1,9 @@
 Code quality:
   ✔ Update dependencies @done(18-12-31 13:44)
   ✔ Check for vulnerabilities, badge with *Snyk* @done(18-12-31 13:48)
+  ☐ Automated testing using *CircleCI*
   ☐ Maintainability score *A*, badge with *Code Climate*
   ☐ 100% test coverage, badge with *Code Climate*
-  ☐ Automated testing using *CircleCI*
   ✔ Conventional commits @done(18-12-31 13:59)
   ✔ StandardJS coding style @done(18-12-31 13:59)
 Performances:
